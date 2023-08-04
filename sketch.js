@@ -25,7 +25,7 @@ function draw() {
   pop();
 }
 function mouseClicked(){
-  if(isLooping){
+  if(isLooping()){
     loop();
   } else {
     noLoop();
