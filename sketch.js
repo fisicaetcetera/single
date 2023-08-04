@@ -13,6 +13,7 @@ function setup() {
 
 function draw() {
    background(0);
+  lights();//...
    translate(0, 0, 0);
    rotateY(-frameCount/3000);
    texture(sky);
