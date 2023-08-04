@@ -13,8 +13,8 @@ function setup() {
 
 function draw() {
    background(0);
-  directionalLight(33,33,255, 1, -1 , -1);
-  directionalLight(255,33,33, -1,1,1);
+  directionalLight(33,33,255, 1, 0,0);
+  directionalLight(255,255,255, -1,0,0);
    translate(0, 0, 0);
    rotateY(-frameCount/3000);
    texture(sky);
