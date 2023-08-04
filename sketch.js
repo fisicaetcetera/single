@@ -24,7 +24,7 @@ function draw() {
    sphere(300);
   pop();
 }
-function(mouseClicked){
+function mouseClicked(){
   if(isLooping){
     loop();
   } else {
