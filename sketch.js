@@ -30,3 +30,4 @@ function mouseClicked(){
   } else {
     noLoop();
 }
+}
