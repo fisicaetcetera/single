@@ -19,7 +19,7 @@ function draw() {
    translate(0, 0, 0);
    rotateY(-frameCount/3000 * rotation);
    texture(sky);
-   sphere(3000);
+   sphere(2000);
   push();
    rotateY(frameCount/1000 * rotation);
    texture(moon);
@@ -36,10 +36,11 @@ function mouseClicked(){
     loop();
 }
 }
-function PareOuGire(){
-  if(rotation == 1){
-  rotation = 0; 
-  } else {
-  rotation = 1;
-  }
+
+function mousePressed() {
+  loop();
+}
+
+function mouseReleased() {
+  noLoop();
 }
