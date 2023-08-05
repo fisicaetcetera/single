@@ -19,7 +19,7 @@ function draw() {
    translate(0, 0, 0);
    rotateY(-frameCount/3000 * rotation);
    texture(sky);
-   sphere(2000);
+   sphere(3000);
   push();
    rotateY(frameCount/1000 * rotation);
    texture(moon);
@@ -29,9 +29,9 @@ function draw() {
 }
 
 function mousePressed() {
-  loop();
+  noLoop();
 }
 
 function mouseReleased() {
-  noLoop();
+  loop();
 }
