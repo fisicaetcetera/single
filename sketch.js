@@ -11,7 +11,7 @@ function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
   pare = createButton("Pare/Gire");
-  pare.mousePressed(Pare/Gire);
+  pare.mousePressed(PareOuGire);
 }
 
 function draw() {
@@ -36,7 +36,7 @@ function mouseClicked(){
     loop();
 }
 }
-fuction Pare(){
+fuction PareOuGire(){
   if(rotation == 1){
   rotation = 0; 
   } else {
