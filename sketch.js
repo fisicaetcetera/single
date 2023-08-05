@@ -17,11 +17,11 @@ function setup() {
 function draw() {
    background(0);
    translate(0, 0, 0);
-   rotateY(-frameCount/3000 * rotation);
+   rotateY(-frameCount/3000);
    texture(sky);
-   sphere(3000);
+   sphere(2000);
   push();
-   rotateY(frameCount/1000 * rotation);
+   rotateY(frameCount/1000);
    texture(moon);
    noStroke();
    sphere(300);
