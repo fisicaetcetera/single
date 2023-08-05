@@ -27,15 +27,6 @@ function draw() {
    sphere(300);
   pop();
 }
-function mouseClicked(){
-  if(isLooping()){
-    console.log("is looping");
-    noLoop();
-  } else {
-    console.log("NOT looping");
-    loop();
-}
-}
 
 function mousePressed() {
   loop();
