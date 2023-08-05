@@ -36,7 +36,7 @@ function mouseClicked(){
     loop();
 }
 }
-fuction PareOuGire(){
+function PareOuGire(){
   if(rotation == 1){
   rotation = 0; 
   } else {
