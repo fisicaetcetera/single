@@ -4,7 +4,7 @@ let rotation = 1;
 
 function preload() {
   sky = loadImage("starmap_4k.jpg");
-  moon = loadImage("moonmap1k.jpg");
+  moon = loadImage("moonmap1k.png");
 }
 
 function setup() {
