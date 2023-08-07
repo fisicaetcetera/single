@@ -1,10 +1,12 @@
 let sky;
 let moon;
+let venus;
 let rotation = 1;
 
 function preload() {
   sky = loadImage("starmap_4k.jpg");
-  moon = loadImage("moonmap1k.png");
+  //moon = loadImage("moonmap1k.png");
+  venus = loadImage("venus.jpg");
 }
 
 function setup() {
@@ -22,7 +24,7 @@ function draw() {
    sphere(2000);
   push();
    rotateY(frameCount/1000);
-   texture(moon);
+   texture(venus);
    noStroke();
    sphere(300);
   pop();
