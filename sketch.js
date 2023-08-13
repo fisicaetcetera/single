@@ -19,6 +19,7 @@ function setup() {
 function draw() {
    background(0);
    translate(0, 0, 0);
+   rotateX(0.401);
    rotateY(-frameCount/3000);
    texture(sky);
    sphere(2000);
