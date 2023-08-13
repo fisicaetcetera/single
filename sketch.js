@@ -18,11 +18,13 @@ function setup() {
 
 function draw() {
    background(0);
+  push();
    translate(0, 0, 0);
-   rotateX(-0.401);
+   rotateX(0.401);
    rotateY(-frameCount/3000);
    texture(sky);
    sphere(2000);
+  pop();
   push();
    rotateY(frameCount/1000);
    //texture(venus);
