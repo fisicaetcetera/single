@@ -27,15 +27,15 @@ function draw() {
    sphere(2000);
   pop();
   push();
-  translate(-400, 0, 0);
-   rotateY(frameCount/1000);
+  translate(-400, 0, -211);
+   rotateY(frameCount/1000 + 0.5);
    //texture(venus);
   texture(moon);
    noStroke();
    sphere(300);
   pop();
   push();
-  translate(400, 0, 0);
+  translate(400, 0, -211);
    rotateY(frameCount/1000);
    //texture(venus);
   texture(moon2k);
