@@ -6,6 +6,7 @@ let rotation = 1;
 function preload() {
   sky = loadImage("starmap_4k.jpg");
   moon = loadImage("moonmap1k.png");
+  moon2k = loadImage("2k_moon.jpg")
   //venus = loadImage("venus.jpg");
 }
 
@@ -26,9 +27,18 @@ function draw() {
    sphere(2000);
   pop();
   push();
+  translate(-400, 0, 0);
    rotateY(frameCount/1000);
    //texture(venus);
   texture(moon);
+   noStroke();
+   sphere(300);
+  pop();
+  push();
+  translate(400, 0, 0);
+   rotateY(frameCount/1000);
+   //texture(venus);
+  texture(moon2k);
    noStroke();
    sphere(300);
   pop();
