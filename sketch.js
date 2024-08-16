@@ -7,7 +7,7 @@ function preload() {
   sky = loadImage("starmap_4k.jpg");
   moon = loadImage("moonmap1k.png");
   moon2k = loadImage("2k_moon.jpg")
-  //venus = loadImage("venus.jpg");
+  venus = loadImage("venus.jpg");
 }
 
 function setup() {
@@ -27,18 +27,9 @@ function draw() {
    sphere(2000);
   pop();
   push();
-  translate(-400, 0, -211);
-   rotateY(frameCount/1000 + 0.5);
-   //texture(venus);
-  texture(moon);
-   noStroke();
-   sphere(300);
-  pop();
-  push();
-  translate(400, 0, -211);
+  translate(0, 0, -211);
    rotateY(frameCount/1000);
-   //texture(venus);
-  texture(moon2k);
+   texture(venus);
    noStroke();
    sphere(300);
   pop();
