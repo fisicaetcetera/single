@@ -31,7 +31,7 @@ function draw() {
   push();
   translate(0, 0, -211);
    rotateY(frameCount/1000);
-   texture = random(CB);
+   texture(random(CB));
    noStroke();
    sphere(300);
   pop();
