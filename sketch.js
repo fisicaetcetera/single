@@ -3,7 +3,7 @@ let moon;
 let moon2k;
 let venus;
 let rotation = 1;
-let CB[];
+let CB = [];
 function preload() {
   sky = loadImage("starmap_4k.jpg");
   moon = loadImage("moonmap1k.png");
@@ -14,7 +14,7 @@ function preload() {
 function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
-  CB[] = [moon,venus,moon2k];
+  CB = [moon,venus,moon2k];
   //pare = createButton("Pare/Gire");
   //pare.mousePressed(PareOuGire);
 }
