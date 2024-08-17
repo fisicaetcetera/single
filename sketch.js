@@ -10,7 +10,8 @@ function preload() {
   moon = loadImage("moonmap1k.png");
   moon2k = loadImage("2k_moon.jpg");
   venus = loadImage("venus.jpg");
-  CB = [moon, moon2k, venus];
+  pluto = loadImage("pluto.jpg");
+  CB = [moon, moon2k, venus, pluto];
   planeta = random(CB);
 }
 
