@@ -4,11 +4,14 @@ let moon2k;
 let venus;
 let rotation = 1;
 let CB = [];
+let planet; 
 function preload() {
   sky = loadImage("starmap_4k.jpg");
   moon = loadImage("moonmap1k.png");
   moon2k = loadImage("2k_moon.jpg");
   venus = loadImage("venus.jpg");
+  CB = [moon, moon2k, venus];
+  planeta = random(CB);
 }
 
 function setup() {
@@ -31,7 +34,7 @@ function draw() {
   push();
   translate(0, 0, -211);
    rotateY(frameCount/1000);
-   texture(random(CB));
+   texture(planet);
    noStroke();
    sphere(300);
   pop();
@@ -42,5 +45,6 @@ function mousePressed() {
 }
 
 function mouseReleased() {
+  planeta = random(CB);
   loop();
 }
