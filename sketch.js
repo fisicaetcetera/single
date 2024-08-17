@@ -18,7 +18,7 @@ function preload() {
   mercury = loadimage ("mercury.jpg");
   sun = loadimage ("sun_2k.jpg");
   earth = loadimage ("earthcloud.jpg");
-  CB = [moon2k, venus, pluto, mars, earth, jupiter, uranus, neptune];
+  CB = [moon2k, venus, pluto, mars, earth, jupiter, uranus, neptune, mercury, sun];
   planeta = random(CB);
 }
 
