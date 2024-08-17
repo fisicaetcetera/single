@@ -17,7 +17,8 @@ function preload() {
 function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
-  CB = [moon,venus,moon2k];
+  let p =createP("planeta");
+  p.position(0,0);
   //pare = createButton("Pare/Gire");
   //pare.mousePressed(PareOuGire);
 }
