@@ -11,7 +11,8 @@ function preload() {
   moon2k = loadImage("2k_moon.jpg");
   venus = loadImage("venus.jpg");
   pluto = loadImage("pluto.jpg");
-  CB = [moon, moon2k, venus, pluto];
+  mars = loadImage ("mars.jpg");
+  CB = [moon, moon2k, venus, pluto, mars];
   planeta = random(CB);
 }
 
