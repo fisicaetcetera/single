@@ -11,13 +11,13 @@ function preload() {
   moon2k = loadImage("2k_moon.jpg");
   venus = loadImage("venus.jpg");
   pluto = loadImage("pluto.jpg");
-  mars = loadimage ("mars.jpg");
-  jupiter = loadimage ("jupiter.jpg");
-  uranus = loadimage ("uranus.jpg");
-  neptune = loadimage ("neptune.jpg");
-  mercury = loadimage ("mercury.jpg");
-  sun = loadimage ("2k_sun.jpg");
-  earth = loadimage ("earthcloud.jpg");
+  mars = loadImage ("mars.jpg");
+  jupiter = loadImage ("jupiter.jpg");
+  uranus = loadImage ("uranus.jpg");
+  neptune = loadImage ("neptune.jpg");
+  mercury = loadImage ("mercury.jpg");
+  sun = loadImage ("2k_sun.jpg");
+  earth = loadImage ("earthcloud.jpg");
   CB = [moon2k, venus, pluto, mars, earth, jupiter, uranus, neptune, mercury, sun];
   planeta = random(CB);
 }
