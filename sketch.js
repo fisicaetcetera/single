@@ -22,7 +22,7 @@ function preload() {
   sharon= loadImage ("sharon.jpg");
   CB = [moon2k,venus,pluto,mars,earth,jupiter,uranus,neptune,mercury,sun,sharon];
   planeta = random(CB);
-  planetName = JSON.stringify(planeta);
+  planetName = JSON.stringify(CB);
   createElement('h2', planetName); 
 }
 function setup() {
