@@ -5,6 +5,7 @@ let venus;
 let rotation = 1;
 let CB = [];
 let planeta; 
+let text = "";
 function preload() {
   sky = loadImage("starmap_4k.jpg");
   moon = loadImage("moonmap1k.png");
@@ -35,6 +36,10 @@ function setup() {
 
 function draw() {
    background(0);
+  for (let x in planeta) {
+    text += planeta[x] + "";
+  };
+  createElement("h3","planet = " + text);
   push();
    translate(0, 0, 0);
    rotateX(0.401);
