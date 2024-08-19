@@ -22,8 +22,9 @@ function preload() {
   sharon= loadImage ("sharon.jpg");
   CB = [moon2k,venus,pluto,mars,earth,jupiter,uranus,neptune,mercury,sun,sharon];
   planeta = random(CB);
+  planetName = JSON.stringify(planeta);
+  createElement('h2', planetName); 
 }
-
 function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
