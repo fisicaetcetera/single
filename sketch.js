@@ -26,7 +26,7 @@ function preload() {
 function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
-  createElement("h3","planet = " + planeta);
+  createElement("h3","planet = " + planeta[1]);
   let p =createP("planeta");
   p.position(0,0);
   //pare = createButton("Pare/Gire");
