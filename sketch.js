@@ -21,7 +21,6 @@ function preload() {
   sharon= loadImage ("sharon.jpg");
   CB = [moon2k,venus,pluto,mars,earth,jupiter,uranus,neptune,mercury,sun,sharon];
   planeta = random(CB);
-  createElement("planet = " + planeta);
 }
 
 function setup() {
