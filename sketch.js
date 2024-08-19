@@ -22,17 +22,10 @@ function preload() {
   sharon= loadImage ("sharon.jpg");
   CB = [moon2k,venus,pluto,mars,earth,jupiter,uranus,neptune,mercury,sun,sharon];
   planeta = random(CB);
-  planetName = JSON.stringify(CB);
-  createElement('h2', planetName); 
 }
 function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
-  createElement("h3","planet = " + planeta[1]);
-  let p =createP("planeta");
-  p.position(0,0);
-  //pare = createButton("Pare/Gire");
-  //pare.mousePressed(PareOuGire);
 }
 
 function draw() {
@@ -59,9 +52,5 @@ function mousePressed() {
 
 function mouseReleased() {
   planeta = random(CB);
-   for (let x in planeta) {
-    text += planeta[x] + "";
-  };
-  createElement("h3","planet = " + text);
   loop();
 }
