@@ -36,10 +36,6 @@ function setup() {
 
 function draw() {
    background(0);
-  for (let x in planeta) {
-    text += planeta[x] + "";
-  };
-  createElement("h3","planet = " + text);
   push();
    translate(0, 0, 0);
    rotateX(0.401);
@@ -62,5 +58,9 @@ function mousePressed() {
 
 function mouseReleased() {
   planeta = random(CB);
+   for (let x in planeta) {
+    text += planeta[x] + "";
+  };
+  createElement("h3","planet = " + text);
   loop();
 }
