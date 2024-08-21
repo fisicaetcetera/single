@@ -21,8 +21,10 @@ function preload() {
   earth = loadImage ("earthcloud.jpg");
   sharon= loadImage ("sharon.jpg");
   europa = loadImage("europa.jpg");
+  saturn = loadImage("saturn.jpg");
+  jupiter1 = loadImage("jupiter1.jpg");
   CB = [moon2k,venus,pluto,mars,earth,jupiter,uranus,neptune,mercury,sun,sharon];
-  CB.push(europa);
+  CB.push(europa, saturn, jupiter1);
   planeta = random(CB);
 }
 function setup() {
