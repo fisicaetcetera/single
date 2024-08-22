@@ -3,6 +3,7 @@ let moon;
 let moon2k;
 let venus;
 let rotation = 1;
+let count = 0;
 let CB = [];
 let planeta; 
 let text = "";
