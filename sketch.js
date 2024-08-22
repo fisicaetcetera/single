@@ -7,6 +7,7 @@ let count = 0;
 let CB = [];
 let planeta; 
 let text = "";
+let twoPi;
 function preload() {
   sky = loadImage("starmap_4k.jpg");
   moon = loadImage("moonmap1k.png");
@@ -31,7 +32,7 @@ function preload() {
 function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
-  let twoPi = 2*Math.PI;
+  twoPi = 2*Math.PI;
 }
 
 function draw() {
