@@ -43,10 +43,13 @@ function draw() {
   pop();
   push();
   translate(0, 0, -211);
-   rotateY(frameCount/1000);
+  angle = FrameCount/1000);
+   rotateY(angle);
    texture(planeta);
    noStroke();
    sphere(300);
+  if(angle > 6.3)
+  {planeta = random(CB)};
   pop();
 }
 
