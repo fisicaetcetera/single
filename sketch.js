@@ -43,7 +43,7 @@ function draw() {
   pop();
   push();
   translate(0, 0, -211);
-  let angulo = frameCount/1000);
+  let angulo = frameCount/1000;
    rotateY(angulo);
    texture(planeta);
    noStroke();
