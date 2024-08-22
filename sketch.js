@@ -44,7 +44,7 @@ function draw() {
   push();
   translate(0, 0, -211);
   angulo = frameCount/1000);
-   rotateY(angle);
+   rotateY(angulo);
    texture(planeta);
    noStroke();
    sphere(300);
