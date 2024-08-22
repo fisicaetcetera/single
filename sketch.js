@@ -48,7 +48,7 @@ function draw() {
    texture(planeta);
    noStroke();
    sphere(300);
-  if(angulo > 6.3){planeta = random(CB);}
+  //if(angulo > 6.3){planeta = random(CB);}
   pop();
 }
 
