@@ -43,12 +43,15 @@ function draw() {
   pop();
   push();
   translate(0, 0, -211);
-  let angulo = frameCount/1000;
+   angulo = frameCount/1000 - count * Math.PI;
    rotateY(angulo);
    texture(planeta);
    noStroke();
    sphere(300);
-   if(angulo > 6.3){planeta = random(CB);}
+   if(angulo > 6.28){
+     planeta = random(CB);
+     count++;
+   }
   pop();
 }
 
