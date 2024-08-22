@@ -31,6 +31,7 @@ function preload() {
 function setup() {
   createCanvas(1366, 768, WEBGL);
   background(0);
+  let twoPi = 2*Math.PI;
 }
 
 function draw() {
@@ -44,12 +45,12 @@ function draw() {
   pop();
   push();
   translate(0, 0, -211);
-   angulo = frameCount/1000 - count * Math.PI;
+   angulo = frameCount/1000 - count * twoPi;
    rotateY(angulo);
    texture(planeta);
    noStroke();
    sphere(300);
-   if(angulo > 6.28){
+   if(angulo > twoPi){
      planeta = random(CB);
      count++;
    }
